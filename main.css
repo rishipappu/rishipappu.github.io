@@ -1,3 +1,54 @@
-body {
-    font-family: "Kiona";
+::-webkit-scrollbar {
+    display: none;
+}
+
+.toggled {
+    color: inherit;
+}
+
+.splash {
+    padding: 2em;
+    background-image: url('./imgs/clouds.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.iconBox {
+    color: inherit;
+}
+
+.navIcon {
+    list-style-type: none;
+    padding: 0;
+    margin: 2em;
+    position: absolute;
+    z-index: 10000;
+    transition: all ease-in-out 0.5s;
+}
+
+.navIcon li {
+    margin: 0.3em 0;
+    height: 0.125em;
+    width: 1.5em;
+    background: #666;
+    transition: all ease-in-out 0.5s;
+}
+
+.toggled .navIcon {
+    transform: rotate(360deg);
+    transition: all ease-in-out 0.3s;
+}
+
+.toggled .navIcon li:nth-child(1) {
+    transform: rotate(45deg) translate(0.2em, 0.1em);
+    transition: all ease-in-out 0.3s;
+}
+
+.toggled .navIcon li:nth-child(2) {
+    transform: rotate(-45deg) translate(0.2em, -0.1em);
+    transition: all ease-in-out 0.3s;
+}
+.overlay {
+    background: #fff;
+    /* opacity: 0.8; */
 }
