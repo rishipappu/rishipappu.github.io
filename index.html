@@ -23,7 +23,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900"
-        rel="stylesheet">
+    rel="stylesheet">
     <link rel="stylesheet" href="./fonts/fonts.css" type="text/css" />
 
     <!--Icons  -->
@@ -38,7 +38,24 @@
 </head>
 
 <body>
-    hello
+    <nav>
+        <div class="overlay">
+            <a href="#" onclick="openNav()" class="iconBox">
+                <ul class="navIcon">
+                    <li></li>
+                    <li></li>
+                </ul>
+            </a>
+        </div>
+    </nav>
+    <script type="text/javascript">
+        function openNav(){
+            $('nav').toggleClass('toggled');
+        }
+    </script>
+    <div class="splash col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+    </div>
 
     <!-- Bootstrap and Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
