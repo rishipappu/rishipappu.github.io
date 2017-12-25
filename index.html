@@ -42,84 +42,90 @@
 </head>
 
 <body>
-    <nav>
-        <div class="overlay">
-            <a href="#" onclick="triggerNav()" class="iconBox">
-                <ul class="navIcon">
-                    <li></li>
-                    <li></li>
-                </ul>
-            </a>
-            <br>
-            <div class="navBox mx-auto">
-                <ul class="navMain">
-                    <li>
-                        <a href="#" onclick="triggerNav()">Abou<span class="noSpace">t</span></a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="triggerNav()">Project<span class="noSpace">s</span></a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="triggerNav()">Resum<span class="noSpace">e</span></a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="triggerNav()">Contac<span class="noSpace">t</span></a>
-                    </li>
-                </ul>
+    <div class="wrapper">
+        <nav>
+            <div class="overlay">
+                <a href="#" onclick="triggerNav()" class="iconBox">
+                    <ul class="navIcon">
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </a>
+                <br>
+                <div class="navBox mx-auto">
+                    <ul class="navMain">
+                        <li>
+                            <a href="#" onclick="triggerNav()">Abou<span class="noSpace">t</span></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="triggerNav()">Project<span class="noSpace">s</span></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="triggerNav()">Resum<span class="noSpace">e</span></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="triggerNav()">Contac<span class="noSpace">t</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="splashWrapper">
+            <div class="splash col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+            <div class="titleBox">
+                <div class="title">
+                    <h1 class="name animated fadeInDown">Rishi Pappu</h1>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <div class="splash col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
-    <div class="titleBox">
-        <div class="title">
-            <h1 class="name animated fadeInDown">Rishi Pappu</h1>
+        <div class="content">
+            hello
         </div>
-    </div>
 
-    <!-- JavaScript Animations -->
-    <script type="text/javascript">
-    // Function to open the navigation and close it
-    function triggerNav(){
-        $('nav').toggleClass('toggled');
-    }
+        <!-- JavaScript Animations -->
+        <script type="text/javascript">
+        // Function to open the navigation and close it
+        function triggerNav(){
+            $('nav').toggleClass('toggled');
+        }
 
-    // JS Animation to make the background follow the cursor
-    var lFollowX = 0,
-    lFollowY = 0,
-    x = 0,
-    y = 0,
-    friction = 1 / 50;
+        // JS Animation to make the background follow the cursor
+        var lFollowX = 0,
+        lFollowY = 0,
+        x = 0,
+        y = 0,
+        friction = 1 / 90;
 
-    function moveBackground() {
-        x += (lFollowX - x) * friction;
-        y += (lFollowY - y) * friction;
+        function moveBackground() {
+            x += (lFollowX - x) * friction;
+            y += (lFollowY - y) * friction;
 
-        translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+            translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
-        $('.splash').css({
-            '-webkit-transform': translate,
-            '-moz-transform': translate,
-            'transform': translate
+            $('.splash').css({
+                '-webkit-transform': translate,
+                '-moz-transform': translate,
+                'transform': translate
+            });
+
+            window.requestAnimationFrame(moveBackground);
+        }
+
+        $(window).on('mousemove click', function(e) {
+
+            var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+            var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+            lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+            lFollowY = (10 * lMouseY) / 100;
+
         });
 
-        window.requestAnimationFrame(moveBackground);
-    }
-
-    $(window).on('mousemove click', function(e) {
-
-        var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-        var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-        lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
-        lFollowY = (10 * lMouseY) / 100;
-
-    });
-
-    moveBackground();
-    </script>
-    <!-- Bootstrap and Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        moveBackground();
+        </script>
+        <!-- Bootstrap and Popper.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
