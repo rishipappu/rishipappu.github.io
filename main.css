@@ -1,112 +1,105 @@
+/* Gets rid of scrollbar */
 ::-webkit-scrollbar {
     display: none;
 }
 
+/* Sets primary font and color */
 html, body {
     font-family: "Kiona";
     color: #666;
+    overflow-x: hidden;
 }
 
+/* ========== */
+/* NAVIGATION */
+/* ========== */
+
+/* Class to trigger toggled changes */
 .toggled {
     color: inherit;
 }
 
-.splash {
-    background-image: url('./imgs/infinite_tower.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    transform: scale(1.1);
-    z-index: -100000;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
+/* Holds the navigation icon */
 .iconBox {
     color: inherit;
 }
 
+/* Navigation icon */
 .navIcon {
     list-style-type: none;
-    padding: 0;
-    margin: 2em;
+    padding: 2em;
+    margin: 0;
     position: absolute;
-    z-index: 500000;
+    z-index: 500001;
     transition: all ease-in-out 0.5s;
 }
 
+/* Styles individual lines of icon */
 .navIcon li {
     margin: 0.3em 0;
     padding: 0.035em 0.75em;
     background: #666;
-    transition: all ease-in-out 0.5s;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+    border-radius: 20px;
 }
 
+/* Triggers spinning animation onClick */
 .toggled .navIcon {
     transform: rotate(360deg);
-    transition: all ease-in-out 0.3s;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
 }
 
+/* Triggers first line of icon to rotate */
 .toggled .navIcon li:nth-child(1) {
     transform: rotate(45deg) translate(0.15em, 0.1em);
-    transition: all ease-in-out 0.3s;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
 }
 
+/* Triggers second line of icon to rotate */
 .toggled .navIcon li:nth-child(2) {
     transform: rotate(-45deg) translate(0.15em, -0.1em);
-    transition: all ease-in-out 0.3s;
-}
-.overlay {
-    background: #fff;
-    opacity: 0.8;
-    z-index: 100000;
-    position: absolute;
-    height: 0;
-    width: 0;
-    transition: all ease-in-out 0.3s;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
 }
 
-.nav {
+/* Holds the list of of links */
+.navMain {
     list-style-type: none;
-    padding: 2em;
-    position: absolute;
-    width: 100%;
-    transition: all ease-in-out 0.3s;
     list-style-position: inside;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
 }
 
-.nav li a {
-    visibility: hidden;
-    transition: all ease-in-out 0.3s;
-    font-family: 'Argon';
+/* Box for the list of links */
+.navBox {
+    position: absolute;
+    z-index: 100000;
+    width: 100%;
+    padding: 2em 0 2em 1.5em;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+}
+
+/* Styles individual links */
+.navMain li a {
+    font-size: 24px;
     text-transform: uppercase;
+    color: #666;
     letter-spacing: 15px;
     font-weight: 300;
     text-decoration: none;
     display: inline-block;
-    text-align: center;
-    top: 50%;
-    left: 50%;
+    margin: 0;
+    opacity: 0;
+    cursor: default;
+    transform: scale(0.5, 0.5, 0.5);
 }
 
-.toggled .nav li a{
-    visibility: visible;
-    transition: all ease-in-out 0.3s;
-    margin: 2em;
-}
-
-.toggled .overlay {
-    background: #fff;
-    height: 100%;
-    width: 100%;
-    transition: all ease-in-out 0.3s;
-}
-
-.toggled .nav li a:after {
+/* Styles the hover animation on the links */
+.navMain li a:after {
     content: "";
     display: block;
-    height: 1px;
+    height: 2px;
     width: 0;
     background: transparent;
     transition: width .5s ease, background-color .5s ease;
@@ -115,15 +108,51 @@ html, body {
     margin: auto;
 }
 
-.toggled .nav li a:hover:after {
+.navMain li a:hover:after {
     width: 100%;
-    background: #000;
+    background: #666;
 }
 
-.content {
-    transform: translate(50%, 50%);
+/* On toggled expands and reveals links */
+.toggled .navMain li a {
+    opacity: 1;
+    margin: 2em 0;
+    cursor: default;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+    transform: scale(1, 1, 1);
+}
+
+/* Styles the translucent white background */
+.overlay {
+    width: 100%;
+    background: #fff;
+    height: 0;
+    opacity: 0.9;
+    position: absolute;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+}
+
+/* Styles the transulcent white background onClick */
+.toggled .overlay {
+    height: 100%;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+}
+
+/* ==== */
+/* BODY */
+/* ==== */
+
+/* Styles the overall moving background */
+.splash {
+    background-image: url('./imgs/infinite_tower.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    transform: scale(1.1);
+    z-index: -100000;
+    height: 100vh;
     padding: 0;
     margin: 0;
-    text-align: center;
-    width: 50%;
 }
