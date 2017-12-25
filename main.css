@@ -7,11 +7,15 @@
     background: transparent;
 }
 
+.wrapper {
+    overflow-x: hidden;
+}
+
 /* Sets primary font and color */
 html, body {
     font-family: "Kiona";
     color: #666;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /* ========== */
@@ -80,7 +84,7 @@ html, body {
     position: absolute;
     z-index: 100000;
     width: 100%;
-    padding: 2em 0 2em 1.5em;
+    padding: 1em 0 1em 1.5em;
     transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
 }
 
@@ -98,6 +102,7 @@ html, body {
     cursor: default;
     transform: scale(0.5, 0.5, 0.5);
     transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+    pointer-events: none;
 }
 
 /* Styles the hover animation on the links */
@@ -126,12 +131,16 @@ html, body {
     cursor: default;
     transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
     transform: scale(1, 1, 1);
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 /* Styles the translucent white background */
 .overlay {
     width: 100%;
-    background: #fff;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 0;
     opacity: 0.9;
     position: absolute;
@@ -159,14 +168,15 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     position: absolute;
     transform: scale(1.1);
-    z-index: -100000;
+    z-index: -1000000;
     height: 100vh;
     padding: 0;
     margin: 0;
     display: inline-block;
+    overflow-x: hidden;
 }
 
 .titleBox {
@@ -177,19 +187,21 @@ html, body {
 }
 
 .name {
-    font-family: "Pangram-Light";
+    font-family: "Code-Bold";
     font-size: 200%;
     text-transform: uppercase;
     letter-spacing: 1em;
     text-align: left;
-    padding: 10em 10vw;
+    padding: 9em 7vw;
     line-height: 2em;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+}
+
+.splashWrapper {
+    background: #666;
+    float: left;
 }
 
 .content {
-    background: #666;
-    /* position: relative; */
-    padding: 30em;
-    display: block;
-    /* z-index: 0; */
+    float: left;
 }
