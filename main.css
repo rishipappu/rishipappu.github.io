@@ -30,8 +30,8 @@ html, body {
     padding: 2em;
     margin: 0;
     position: absolute;
-    z-index: 500001;
-    transition: all ease-in-out 0.5s;
+    z-index: 10000;
+    transition: all ease-in-out 0.3s;
 }
 
 /* Styles individual lines of icon */
@@ -39,26 +39,26 @@ html, body {
     margin: 0.3em 0;
     padding: 0.035em 0.75em;
     background: #666;
-    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
-    border-radius: 20px;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.3s;
+    border-radius: 50px;
 }
 
 /* Triggers spinning animation onClick */
 .toggled .navIcon {
     transform: rotate(360deg);
-    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.3s;
 }
 
 /* Triggers first line of icon to rotate */
 .toggled .navIcon li:nth-child(1) {
     transform: rotate(45deg) translate(0.15em, 0.1em);
-    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.3s;
 }
 
 /* Triggers second line of icon to rotate */
 .toggled .navIcon li:nth-child(2) {
     transform: rotate(-45deg) translate(0.15em, -0.1em);
-    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.3s;
 }
 
 /* Holds the list of of links */
@@ -93,6 +93,7 @@ html, body {
     opacity: 0;
     cursor: default;
     transform: scale(0.5, 0.5, 0.5);
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
 }
 
 /* Styles the hover animation on the links */
@@ -111,6 +112,7 @@ html, body {
 .navMain li a:hover:after {
     width: 100%;
     background: #666;
+    border-radius: 50px;
 }
 
 /* On toggled expands and reveals links */
@@ -130,12 +132,18 @@ html, body {
     opacity: 0.9;
     position: absolute;
     transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+    z-index: 1;
 }
 
 /* Styles the transulcent white background onClick */
 .toggled .overlay {
     height: 100%;
     transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+}
+
+/* Removes letter-spacing at the end of the navigation links */
+.noSpace {
+    letter-spacing: 0;
 }
 
 /* ==== */
@@ -151,8 +159,32 @@ html, body {
     background-attachment: fixed;
     position: absolute;
     transform: scale(1.1);
-    z-index: -100000;
+    z-index: 0;
     height: 100vh;
     padding: 0;
     margin: 0;
+}
+
+.title {
+    background: transparent;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+
+}
+
+.name {
+    font-family: "Pangram-Light";
+    font-size: 56px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.content {
+    background: #666;
+    /* position: relative; */
+    padding: 30em;
+    display: block;
+    /* z-index: 0; */
 }
