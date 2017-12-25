@@ -3,6 +3,10 @@
     display: none;
 }
 
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
 /* Sets primary font and color */
 html, body {
     font-family: "Kiona";
@@ -30,7 +34,7 @@ html, body {
     padding: 2em;
     margin: 0;
     position: absolute;
-    z-index: 10000;
+    z-index: 5000000;
     transition: all ease-in-out 0.3s;
 }
 
@@ -132,7 +136,6 @@ html, body {
     opacity: 0.9;
     position: absolute;
     transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
-    z-index: 1;
 }
 
 /* Styles the transulcent white background onClick */
@@ -159,26 +162,28 @@ html, body {
     background-attachment: fixed;
     position: absolute;
     transform: scale(1.1);
-    z-index: 0;
+    z-index: -100000;
     height: 100vh;
     padding: 0;
     margin: 0;
+    display: inline-block;
 }
 
-.title {
+.titleBox {
     background: transparent;
     z-index: -1;
-    top: 50%;
-    left: 50%;
     position: absolute;
-
+    text-align: left;
 }
 
 .name {
     font-family: "Pangram-Light";
-    font-size: 56px;
+    font-size: 200%;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 1em;
+    text-align: left;
+    padding: 10em 10vw;
+    line-height: 2em;
 }
 
 .content {
