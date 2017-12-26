@@ -65,6 +65,18 @@
 }
 
 @font-face {
+  font-family: 'Aquatico';
+  src: url('./Aquatico/Aquatico-Regular.eot');
+  src: url('./Aquatico/Aquatico-Regular.woff2') format('woff2'),
+       url('./Aquatico/Aquatico-Regular.woff') format('woff'),
+       url('./Aquatico/Aquatico-Regular.ttf') format('truetype'),
+       url('./Aquatico/Aquatico-Regular.svg#Aquatico-Regular') format('svg'),
+       url('./Aquatico/Aquatico-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Argon';
   src: url('./Argon/ArgonPERSONAL-Regular.eot');
   src: url('./Argon/ArgonPERSONAL-Regular.woff2') format('woff2'),
@@ -231,4 +243,3 @@
   font-weight: normal;
   font-style: normal;
 }
-
