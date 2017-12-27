@@ -243,3 +243,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Zefani';
+  src: url('./Zefani/ZefaniStencil-Regular.eot');
+  src: url('./Zefani/ZefaniStencil-Regular.woff2') format('woff2'),
+       url('./Zefani/ZefaniStencil-Regular.woff') format('woff'),
+       url('./Zefani/ZefaniStencil-Regular.ttf') format('truetype'),
+       url('./Zefani/ZefaniStencil-Regular.svg#ZefaniStencil-Regular') format('svg'),
+       url('./Zefani/ZefaniStencil-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
