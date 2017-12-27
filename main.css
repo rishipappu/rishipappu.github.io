@@ -95,7 +95,6 @@ html, body {
     text-transform: uppercase;
     color: #666;
     letter-spacing: 15px;
-    font-weight: 300;
     text-decoration: none;
     display: inline-block;
     margin: 0;
@@ -128,7 +127,7 @@ html, body {
 /* On toggled expands and reveals links */
 .toggled .navMain li a {
     opacity: 1;
-    margin: 2em 0;
+    margin: 1.5em 0;
     cursor: default;
     transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
     transform: scale(1, 1, 1);
@@ -165,11 +164,11 @@ html, body {
 
 /* Styles the overall moving background */
 .splash {
-    background-image: url('./imgs/infinite_tower.jpg');
+    background-image: url('./imgs/reaching_hands.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     position: absolute;
     transform: scale(1.1);
     z-index: -1000000;
@@ -188,8 +187,8 @@ html, body {
 }
 
 .name {
-    font-family: "Code-Bold";
-    font-size: 200%;
+    font-family: "Aquatico";
+    font-size: 250%;
     text-transform: uppercase;
     letter-spacing: 1em;
     text-align: left;
@@ -208,7 +207,13 @@ html, body {
 }
 
 .quickDescription {
+    font-family: "Kiona";
+    text-align: center;
+    letter-spacing: 2px;
+}
 
+.profileBox {
+    margin-bottom: 2em;
 }
 
 .profileImage {
@@ -217,4 +222,95 @@ html, body {
     max-width: 100%;
     border-radius: 100px;
     border: 5px solid #fff;
+}
+
+.breakDown {
+    font-size: 100%;
+}
+
+.horizontalRuling {
+    width: 5em;
+    margin: 2em auto;
+}
+
+.characteristics {
+    display: inline-block;
+    font-family: "Pangram-Light";
+    margin: 1em 2em;
+    text-transform: uppercase;
+}
+
+.iconDescriptions {
+    margin: 1em;
+}
+
+.shortLine {
+    margin: 4em 0;
+    font-family: "Pangram-Light"
+}
+
+
+.insetUnderline {
+    border-bottom: 1px solid #CFDEF3;
+    box-shadow: inset 0 -8px #CFDEF3;
+}
+
+.contactMeText {
+    transform: skew(0, 5deg);
+    text-align: center;
+}
+
+.contactMe {
+    margin-top: 4em;
+    padding: 5em;
+    transform: skew(0, -5deg);
+    background-image: url("./imgs/cloudy_plane.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Pangram-Light";
+    border-top: 5px solid #CFDEF3;
+    border-bottom: 5px solid #CFDEF3;
+}
+
+.contactForm {
+    margin: 1em 0;
+}
+
+input {
+    border: none;
+    background: transparent;
+    padding-left: 10px;
+    font-family: "Pangram-Light";
+    border-bottom: 1px solid #CFDEF3;
+    box-shadow: inset 0 -5px #CFDEF3;
+    margin: 1em auto;
+    width: 15em;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: inset 0 -7px #CFDEF3;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+}
+
+input:hover {
+    box-shadow: inset 0 -7px #CFDEF3;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+}
+
+textarea {
+    width: 15em;
+    margin: 1em auto;
+    height: 7em;
+    resize: none;
+    border: 4px solid #CFDEF3;
+    padding: 10px;
+    background: transparent;
+}
+
+textarea:focus {
+    outline: none;
 }
