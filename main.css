@@ -7,6 +7,15 @@
     background: transparent;
 }
 
+/* Makes sure the highlight color is a light blue color */
+::selection {
+  background: #CFDEF3; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #CFDEF3; /* Gecko Browsers */
+}
+
+/* Wrapper for the entire body that makes sure you can't scroll left and right */
 .wrapper {
     overflow-x: hidden;
 }
@@ -103,6 +112,7 @@ html, body {
     transform: scale(0.5, 0.5, 0.5);
     transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
     pointer-events: none;
+    font-family: "Pangram-Light";
 }
 
 /* Styles the hover animation on the links */
@@ -207,7 +217,7 @@ html, body {
 
 /* Styles the div holding the bmoving background */
 .splashWrapper {
-    background: #666;
+    background: transparent;
     background-attachment: fixed;
 }
 
@@ -399,6 +409,7 @@ button[type="submit"]:focus {
     text-decoration: none;
     color: #666;
     margin: 0 1em;
+    padding: 0;
 }
 
 /* Styles the link that holds the icons on hover */
@@ -426,3 +437,36 @@ button[type="submit"]:focus {
 /* =================================================================== */
 /*                               ABOUT                                 */
 /* =================================================================== */
+
+.aboutTitleBox {
+    /* margin-top: 5em; */
+    padding: 20.5em 7vw;
+    height: 100vh;
+    background-image: url("./imgs/golden_stairs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.aboutTitle {
+    font-family: "Aquatico";
+    text-align: left;
+    letter-spacing: 0.5em;
+}
+
+.aboutParagraphBox {
+    padding: 0 5em;
+    margin: 3em 0;
+    line-height: 20px;
+}
+
+.aboutParagraph {
+    margin: 1.5em 0;
+    font-family: "Pangram-Light";
+    color: #666;
+}
+
+.largeLetter {
+    font-size: 2em;
+}
