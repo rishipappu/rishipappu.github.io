@@ -456,7 +456,7 @@ button[type="submit"]:focus {
 }
 
 .aboutParagraphBox {
-    padding: 0 5em;
+    padding: 0 7vw;
     margin: 3em 0;
     line-height: 20px;
 }
