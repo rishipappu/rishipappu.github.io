@@ -1,3 +1,7 @@
+/* =================================================================== */
+/*                              GENERAL                                */
+/* =================================================================== */
+
 /* Gets rid of scrollbar */
 ::-webkit-scrollbar {
     display: none;
@@ -9,14 +13,19 @@
 
 /* Makes sure the highlight color is a light blue color */
 ::selection {
-  background: #CFDEF3; /* WebKit/Blink Browsers */
+    background: #CFDEF3; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #CFDEF3; /* Gecko Browsers */
+    background: #CFDEF3; /* Gecko Browsers */
 }
 
 /* Wrapper for the entire body that makes sure you can't scroll left and right */
 .wrapper {
+    overflow-x: hidden;
+}
+
+html {
+    overflow: scroll;
     overflow-x: hidden;
 }
 
@@ -26,6 +35,17 @@ html, body {
     color: #666;
     overflow-x: hidden !important;
 }
+
+.reverseSkewBox {
+    transform: skew(0, 5deg);
+}
+
+.skewBox {
+    transform: skew(0, -5deg);
+    border-bottom: 5px solid #CFDEF3;
+    padding-bottom: 5em;
+}
+
 
 /* =================================================================== */
 /*                            NAVIGATION                               */
@@ -308,6 +328,8 @@ html, body {
 .contactMeText {
     transform: skew(0, 5deg);
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* Styles the div holding the form for the contact me */
@@ -376,7 +398,7 @@ button[type="submit"] {
     margin: 1em;
     text-transform: uppercase;
     color: #666;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
     font-family: "Kiona";
 }
@@ -438,9 +460,9 @@ button[type="submit"]:focus {
 /*                               ABOUT                                 */
 /* =================================================================== */
 
+/* Styles the box holding the title of About */
 .aboutTitleBox {
-    /* margin-top: 5em; */
-    padding: 20.5em 7vw;
+    padding: 45vh 7vw;
     height: 100vh;
     background-image: url("./imgs/golden_stairs.jpg");
     background-position: center;
@@ -449,24 +471,78 @@ button[type="submit"]:focus {
     background-attachment: fixed;
 }
 
+/* Styles the About title */
 .aboutTitle {
     font-family: "Aquatico";
     text-align: left;
     letter-spacing: 0.5em;
 }
 
+/* Styles the div holding the paragraphs that describe me */
 .aboutParagraphBox {
     padding: 0 7vw;
     margin: 3em 0;
     line-height: 20px;
 }
 
+/* Styles the actual paragraphs themselves */
 .aboutParagraph {
     margin: 1.5em 0;
     font-family: "Pangram-Light";
     color: #666;
 }
 
+/* Styles the first letter of the first paragraph */
 .largeLetter {
     font-size: 2em;
+}
+
+/* =================================================================== */
+/*                               Résumé                                */
+/* =================================================================== */
+
+.resumeTitleBox {
+    padding: 45vh 7vw;
+    height: 100vh;
+    background-image: url("./imgs/infinite_white_doorway.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.resumeTitle {
+    font-family: "Aquatico";
+    text-align: left;
+    letter-spacing: 0.5em;
+}
+
+
+.resumeBox {
+    padding: 7vh;
+    margin: 2em auto;
+}
+
+
+.resumeView {
+    height: 80em;
+    width: 80%;
+    border: 5px solid #CFDEF3;
+    padding: 2em;
+    margin: 0;
+
+}
+
+.resumeDownload {
+    text-align: center;
+}
+
+.downloadButton {
+    font-family: "Kiona";
+    letter-spacing: 2px;
+    color: #666;
+    border: 2px solid #CFDEF3;
+    border-radius: 100px;
+    padding: 5px 1em;
+    text-align: center;
 }
