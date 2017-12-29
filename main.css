@@ -545,4 +545,12 @@ button[type="submit"]:focus {
     border-radius: 100px;
     padding: 5px 1em;
     text-align: center;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+}
+
+.downloadButton:hover {
+    background: #CFDEF3;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
+    text-decoration: none;
+    color: #666;
 }
