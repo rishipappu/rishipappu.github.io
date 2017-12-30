@@ -58,13 +58,13 @@
                             <a href="./about.html" onclick="triggerNav()">Abou<span class="noSpace">t</span></a>
                         </li>
                         <li>
-                            <a href="#" onclick="triggerNav()">Project<span class="noSpace">s</span></a>
+                            <a href="./projects.html" onclick="triggerNav()">Project<span class="noSpace">s</span></a>
                         </li>
                         <li>
-                            <a href="#" onclick="triggerNav()">Resum<span class="noSpace">e</span></a>
+                            <a href="./resume.html" onclick="triggerNav()">Resum<span class="noSpace">e</span></a>
                         </li>
                         <li>
-                            <a href="#" onclick="triggerNav()">Photograph<span class="noSpace">y</span></a>
+                            <a href="./photography.html" onclick="triggerNav()">Photograph<span class="noSpace">y</span></a>
                         </li>
                         <li>
                             <a href="#contactMe" onclick="triggerNav()">Contac<span class="noSpace">t</span></a>
@@ -108,7 +108,7 @@
                     <br>
                     <textarea class="animated bounceInDown" name="Message" rows="8" cols="80" placeholder="Send me a message!"></textarea>
                     <br>
-                    <button class="animated bounceInDown" type="submit" name="Send">Send<span class="fa fa-paper-plane"></span></button>
+                    <button class="animated bounceInDown" type="submit" name="Send" onclick="flyPlane()">Send<span class="fa fa-paper-plane"></span></button>
                 </form>
             </div>
         </div>
@@ -129,6 +129,11 @@
         // Function to open the navigation and close it
         function triggerNav(){
             $('nav').toggleClass('toggled');
+        }
+
+        function flyPlane(){
+            $('.fa-paper-plane').toggleClass('animated');
+            $('.fa-paper-plane').toggleClass('fadeOutUpBig');
         }
 
         // JS Animation to make the background follow the cursor
