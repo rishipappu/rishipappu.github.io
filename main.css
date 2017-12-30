@@ -22,6 +22,8 @@
 /* Wrapper for the entire body that makes sure you can't scroll left and right */
 .wrapper {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -34,6 +36,8 @@ html, body {
     font-family: "Kiona";
     color: #666;
     overflow-x: hidden !important;
+    padding: 0;
+    margin: 0;
 }
 
 .reverseSkewBox {
@@ -226,7 +230,7 @@ html, body {
 /* Styles my name */
 .name {
     font-family: "Aquatico";
-    font-size: 250%;
+    font-size: 200%;
     text-transform: uppercase;
     letter-spacing: 1em;
     text-align: left;
@@ -476,6 +480,7 @@ button[type="submit"]:focus {
     font-family: "Aquatico";
     text-align: left;
     letter-spacing: 0.5em;
+    font-size: 200%;
 }
 
 /* Styles the div holding the paragraphs that describe me */
@@ -515,6 +520,7 @@ button[type="submit"]:focus {
     font-family: "Aquatico";
     text-align: left;
     letter-spacing: 0.5em;
+    font-size: 200%;
 }
 
 
@@ -553,4 +559,25 @@ button[type="submit"]:focus {
     transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.5s;
     text-decoration: none;
     color: #666;
+}
+
+/* =================================================================== */
+/*                              Projects                               */
+/* =================================================================== */
+
+.projectsTitleBox {
+    padding: 45vh 7vw;
+    height: 100vh;
+    background-image: url("./imgs/birds_on_a_wire.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.projectsTitle {
+    font-family: "Aquatico";
+    text-align: left;
+    letter-spacing: 0.5em;
+    font-size: 200%;
 }
