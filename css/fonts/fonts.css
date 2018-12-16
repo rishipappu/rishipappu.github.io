@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'Ailerons';
+  src: url('../fonts/Ailerons/Ailerons-Regular.eot');
+  src: url('../fonts/Ailerons/Ailerons-Regular.woff2') format('woff2'),
+       url('../fonts/Ailerons/Ailerons-Regular.woff') format('woff'),
+       url('../fonts/Ailerons/Ailerons-Regular.ttf') format('truetype'),
+       url('../fonts/Ailerons/Ailerons-Regular.svg#Ailerons-Regular') format('svg'),
+       url('../fonts/Ailerons/Ailerons-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EVO-Bold';
+  src: url('../fonts/Evolve/EVO/Bold/MADEEvolveSansEVO-Bold.eot');
+  src: url('../fonts/Evolve/EVO/Bold/MADEEvolveSansEVO-Bold.woff2') format('woff2'),
+       url('../fonts/Evolve/EVO/Bold/MADEEvolveSansEVO-Bold.woff') format('woff'),
+       url('../fonts/Evolve/EVO/Bold/MADEEvolveSansEVO-Bold.ttf') format('truetype'),
+       url('../fonts/Evolve/EVO/Bold/MADEEvolveSansEVO-Bold.svg#MADEEvolveSansEVO-Bold') format('svg'),
+       url('../fonts/Evolve/EVO/Bold/MADEEvolveSansEVO-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EVO-Light';
+  src: url('../fonts/Evolve/EVO/Light/MADEEvolveSansEVO-Light.eot');
+  src: url('../fonts/Evolve/EVO/Light/MADEEvolveSansEVO-Light.woff2') format('woff2'),
+       url('../fonts/Evolve/EVO/Light/MADEEvolveSansEVO-Light.woff') format('woff'),
+       url('../fonts/Evolve/EVO/Light/MADEEvolveSansEVO-Light.ttf') format('truetype'),
+       url('../fonts/Evolve/EVO/Light/MADEEvolveSansEVO-Light.svg#MADEEvolveSansEVO-Light') format('svg'),
+       url('../fonts/Evolve/EVO/Light/MADEEvolveSansEVO-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EVO-Medium';
+  src: url('../fonts/Evolve/EVO/Medium/MADEEvolveSansEVO-Medium.eot');
+  src: url('../fonts/Evolve/EVO/Medium/MADEEvolveSansEVO-Medium.woff2') format('woff2'),
+       url('../fonts/Evolve/EVO/Medium/MADEEvolveSansEVO-Medium.woff') format('woff'),
+       url('../fonts/Evolve/EVO/Medium/MADEEvolveSansEVO-Medium.ttf') format('truetype'),
+       url('../fonts/Evolve/EVO/Medium/MADEEvolveSansEVO-Medium.svg#MADEEvolveSansEVO-Medium') format('svg'),
+       url('../fonts/Evolve/EVO/Medium/MADEEvolveSansEVO-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EVO';
+  src: url('../fonts/Evolve/EVO/Regular/MADEEvolveSansEVO.eot');
+  src: url('../fonts/Evolve/EVO/Regular/MADEEvolveSansEVO.woff2') format('woff2'),
+       url('../fonts/Evolve/EVO/Regular/MADEEvolveSansEVO.woff') format('woff'),
+       url('../fonts/Evolve/EVO/Regular/MADEEvolveSansEVO.ttf') format('truetype'),
+       url('../fonts/Evolve/EVO/Regular/MADEEvolveSansEVO.svg#MADEEvolveSansEVO') format('svg'),
+       url('../fonts/Evolve/EVO/Regular/MADEEvolveSansEVO.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EVO-Thin';
+  src: url('../fonts/Evolve/EVO/Thin/MADEEvolveSansEVO-Thin.eot');
+  src: url('../fonts/Evolve/EVO/Thin/MADEEvolveSansEVO-Thin.woff2') format('woff2'),
+       url('../fonts/Evolve/EVO/Thin/MADEEvolveSansEVO-Thin.woff') format('woff'),
+       url('../fonts/Evolve/EVO/Thin/MADEEvolveSansEVO-Thin.ttf') format('truetype'),
+       url('../fonts/Evolve/EVO/Thin/MADEEvolveSansEVO-Thin.svg#MADEEvolveSansEVO-Thin') format('svg'),
+       url('../fonts/Evolve/EVO/Thin/MADEEvolveSansEVO-Thin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Evolve-Bold';
+  src: url('../fonts/Evolve/MADE/Bold/MADEEvolveSans-Bold.eot');
+  src: url('../fonts/Evolve/MADE/Bold/MADEEvolveSans-Bold.woff2') format('woff2'),
+       url('../fonts/Evolve/MADE/Bold/MADEEvolveSans-Bold.woff') format('woff'),
+       url('../fonts/Evolve/MADE/Bold/MADEEvolveSans-Bold.ttf') format('truetype'),
+       url('../fonts/Evolve/MADE/Bold/MADEEvolveSans-Bold.svg#MADEEvolveSans-Bold') format('svg'),
+       url('../fonts/Evolve/MADE/Bold/MADEEvolveSans-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Evolve-Light';
+  src: url('../fonts/Evolve/MADE/Light/MADEEvolveSans-Light.eot');
+  src: url('../fonts/Evolve/MADE/Light/MADEEvolveSans-Light.woff2') format('woff2'),
+       url('../fonts/Evolve/MADE/Light/MADEEvolveSans-Light.woff') format('woff'),
+       url('../fonts/Evolve/MADE/Light/MADEEvolveSans-Light.ttf') format('truetype'),
+       url('../fonts/Evolve/MADE/Light/MADEEvolveSans-Light.svg#MADEEvolveSans-Light') format('svg'),
+       url('../fonts/Evolve/MADE/Light/MADEEvolveSans-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Evolve-Medium';
+  src: url('../fonts/Evolve/MADE/Medium/MADEEvolveSans-Medium.eot');
+  src: url('../fonts/Evolve/MADE/Medium/MADEEvolveSans-Medium.woff2') format('woff2'),
+       url('../fonts/Evolve/MADE/Medium/MADEEvolveSans-Medium.woff') format('woff'),
+       url('../fonts/Evolve/MADE/Medium/MADEEvolveSans-Medium.ttf') format('truetype'),
+       url('../fonts/Evolve/MADE/Medium/MADEEvolveSans-Medium.svg#MADEEvolveSans-Medium') format('svg'),
+       url('../fonts/Evolve/MADE/Medium/MADEEvolveSans-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Evolve';
+  src: url('../fonts/Evolve/MADE/Regular/MADEEvolveSans.eot');
+  src: url('../fonts/Evolve/MADE/Regular/MADEEvolveSans.woff2') format('woff2'),
+       url('../fonts/Evolve/MADE/Regular/MADEEvolveSans.woff') format('woff'),
+       url('../fonts/Evolve/MADE/Regular/MADEEvolveSans.ttf') format('truetype'),
+       url('../fonts/Evolve/MADE/Regular/MADEEvolveSans.svg#MADEEvolveSans') format('svg'),
+       url('../fonts/Evolve/MADE/Regular/MADEEvolveSans.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Evolve-Thin';
+  src: url('../fonts/Evolve/MADE/Thin/MADEEvolveSans-Thin.eot');
+  src: url('../fonts/Evolve/MADE/Thin/MADEEvolveSans-Thin.woff2') format('woff2'),
+       url('../fonts/Evolve/MADE/Thin/MADEEvolveSans-Thin.woff') format('woff'),
+       url('../fonts/Evolve/MADE/Thin/MADEEvolveSans-Thin.ttf') format('truetype'),
+       url('../fonts/Evolve/MADE/Thin/MADEEvolveSans-Thin.svg#MADEEvolveSans-Thin') format('svg'),
+       url('../fonts/Evolve/MADE/Thin/MADEEvolveSans-Thin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ikaros-Light';
+  src: url('../fonts/Ikaros/Ikaros-Light/Ikaros-Light.eot');
+  src: url('../fonts/Ikaros/Ikaros-Light/Ikaros-Light.woff2') format('woff2'),
+       url('../fonts/Ikaros/Ikaros-Light/Ikaros-Light.woff') format('woff'),
+       url('../fonts/Ikaros/Ikaros-Light/Ikaros-Light.ttf') format('truetype'),
+       url('../fonts/Ikaros/Ikaros-Light/Ikaros-Light.svg#Ikaros-Light') format('svg'),
+       url('../fonts/Ikaros/Ikaros-Light/Ikaros-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ikaros';
+  src: url('../fonts/Ikaros/Ikaros-Regular/Ikaros-Regular.eot');
+  src: url('../fonts/Ikaros/Ikaros-Regular/Ikaros-Regular.woff2') format('woff2'),
+       url('../fonts/Ikaros/Ikaros-Regular/Ikaros-Regular.woff') format('woff'),
+       url('../fonts/Ikaros/Ikaros-Regular/Ikaros-Regular.ttf') format('truetype'),
+       url('../fonts/Ikaros/Ikaros-Regular/Ikaros-Regular.svg#Ikaros-Regular') format('svg'),
+       url('../fonts/Ikaros/Ikaros-Regular/Ikaros-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pangram-Black';
+  src: url('../fonts/Pangram/Black/Pangram-Black.eot');
+  src: url('../fonts/Pangram/Black/Pangram-Black.woff2') format('woff2'),
+       url('../fonts/Pangram/Black/Pangram-Black.woff') format('woff'),
+       url('../fonts/Pangram/Black/Pangram-Black.ttf') format('truetype'),
+       url('../fonts/Pangram/Black/Pangram-Black.svg#Pangram-Black') format('svg'),
+       url('../fonts/Pangram/Black/Pangram-Black.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pangram-Bold';
+  src: url('../fonts/Pangram/Bold/Pangram-Bold.eot');
+  src: url('../fonts/Pangram/Bold/Pangram-Bold.woff2') format('woff2'),
+       url('../fonts/Pangram/Bold/Pangram-Bold.woff') format('woff'),
+       url('../fonts/Pangram/Bold/Pangram-Bold.ttf') format('truetype'),
+       url('../fonts/Pangram/Bold/Pangram-Bold.svg#Pangram-Bold') format('svg'),
+       url('../fonts/Pangram/Bold/Pangram-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pangram-ExtraBold';
+  src: url('../fonts/Pangram/Extra-Bold/Pangram-ExtraBold.eot');
+  src: url('../fonts/Pangram/Extra-Bold/Pangram-ExtraBold.woff2') format('woff2'),
+       url('../fonts/Pangram/Extra-Bold/Pangram-ExtraBold.woff') format('woff'),
+       url('../fonts/Pangram/Extra-Bold/Pangram-ExtraBold.ttf') format('truetype'),
+       url('../fonts/Pangram/Extra-Bold/Pangram-ExtraBold.svg#Pangram-ExtraBold') format('svg'),
+       url('../fonts/Pangram/Extra-Bold/Pangram-ExtraBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pangram-ExtraLight';
+  src: url('../fonts/Pangram/Extra-Light/Pangram-ExtraLight.eot');
+  src: url('../fonts/Pangram/Extra-Light/Pangram-ExtraLight.woff2') format('woff2'),
+       url('../fonts/Pangram/Extra-Light/Pangram-ExtraLight.woff') format('woff'),
+       url('../fonts/Pangram/Extra-Light/Pangram-ExtraLight.ttf') format('truetype'),
+       url('../fonts/Pangram/Extra-Light/Pangram-ExtraLight.svg#Pangram-ExtraLight') format('svg'),
+       url('../fonts/Pangram/Extra-Light/Pangram-ExtraLight.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pangram-Light';
+  src: url('../fonts/Pangram/Light/Pangram-Light.eot');
+  src: url('../fonts/Pangram/Light/Pangram-Light.woff2') format('woff2'),
+       url('../fonts/Pangram/Light/Pangram-Light.woff') format('woff'),
+       url('../fonts/Pangram/Light/Pangram-Light.ttf') format('truetype'),
+       url('../fonts/Pangram/Light/Pangram-Light.svg#Pangram-Light') format('svg'),
+       url('../fonts/Pangram/Light/Pangram-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pangram-Medium';
+  src: url('../fonts/Pangram/Medium/Pangram-Medium.eot');
+  src: url('../fonts/Pangram/Medium/Pangram-Medium.woff2') format('woff2'),
+       url('../fonts/Pangram/Medium/Pangram-Medium.woff') format('woff'),
+       url('../fonts/Pangram/Medium/Pangram-Medium.ttf') format('truetype'),
+       url('../fonts/Pangram/Medium/Pangram-Medium.svg#Pangram-Medium') format('svg'),
+       url('../fonts/Pangram/Medium/Pangram-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pangram';
+  src: url('../fonts/Pangram/Regular/Pangram-Regular.eot');
+  src: url('../fonts/Pangram/Regular/Pangram-Regular.woff2') format('woff2'),
+       url('../fonts/Pangram/Regular/Pangram-Regular.woff') format('woff'),
+       url('../fonts/Pangram/Regular/Pangram-Regular.ttf') format('truetype'),
+       url('../fonts/Pangram/Regular/Pangram-Regular.svg#Pangram-Regular') format('svg'),
+       url('../fonts/Pangram/Regular/Pangram-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tahu';
+  src: url('../fonts/Tahu/Tahu!.eot');
+  src: url('../fonts/Tahu/Tahu!.woff2') format('woff2'),
+       url('../fonts/Tahu/Tahu!.woff') format('woff'),
+       url('../fonts/Tahu/Tahu!.ttf') format('truetype'),
+       url('../fonts/Tahu/Tahu!.svg#Tahu!') format('svg'),
+       url('../fonts/Tahu/Tahu!.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avayx';
+  src: url('../fonts/Avayx/Avayx.eot');
+  src: url('../fonts/Avayx/Avayx.woff2') format('woff2'),
+       url('../fonts/Avayx/Avayx.woff') format('woff'),
+       url('../fonts/Avayx/Avayx.ttf') format('truetype'),
+       url('../fonts/Avayx/Avayx.svg#Avayx') format('svg'),
+       url('../fonts/Avayx/Avayx.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archia';
+    src: url('../fonts/Archia/Archia_Regular/Archia\ Regular\ Webfont/archia-regular-webfont.eot');
+    src: url('../fonts/Archia/Archia_Regular/Archia\ Regular\ Webfont/archia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Archia/Archia_Regular/Archia\ Regular\ Webfont/archia-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Archia/Archia_Regular/Archia\ Regular\ Webfont/archia-regular-webfont.woff') format('woff'),
+         url('../fonts/Archia/Archia_Regular/Archia\ Regular\ Webfont/archia-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

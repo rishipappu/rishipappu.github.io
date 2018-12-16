@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Avayx';
+  src: url('Avayx.eot');
+  src: url('Avayx.woff2') format('woff2'),
+       url('Avayx.woff') format('woff'),
+       url('Avayx.ttf') format('truetype'),
+       url('Avayx.svg#Avayx') format('svg'),
+       url('Avayx.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
