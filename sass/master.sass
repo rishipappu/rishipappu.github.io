@@ -1,6 +1,93 @@
-html,
-body
+$title: "Space Grotesk", "Anderson Grotesk", "Charlevoix Pro", "Pangram", "Helvetica", sans-serif
+$paragraph: "Anderson Grotesk", "Charlevoix Pro", "Helvetica", sans-serif
+$dark: #151515
+$darker: #101010
+
+%transition
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s
+    
+%flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+%lettering
+    color: #ffffff
+    font-weight: lighter
+
+%no-space
     padding: 0
     margin: 0
+
+%title-font-apply
+    font-family: $title
+    @extend %lettering
+
+%paragraph-font-apply
+    font-family: $paragraph
+    @extend %lettering
+    line-height: 1.5em
+
+html,
+body
+    @extend %no-space
     overflow-x: hidden
 
+.site
+    background-color: $darker
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    padding: 0.5em
+    display: -webkit-flex 
+    -webkit-flex-wrap: wrap 
+
+.box
+    background: $dark
+    margin: 0.5em
+    padding: 1.5em
+
+.gutters
+    margin: -1em 0 0 -1em
+
+.gutters > .box
+    padding: 1em 0 0 1em
+
+.main
+    flex: 0 1 30%
+
+.name
+    @extend %title-font-apply
+    @extend %no-space
+    text-transform: uppercase
+
+.tagline
+    @extend %title-font-apply
+    @extend %no-space
+    text-transform: uppercase
+    margin-top: 10px
+
+.social
+    margin-top: 2em
+    @extend %transition
+    &:hover > .socialicon
+        opacity: 0.5
+        @extend %transition
+    &:hover > .socialicon:hover
+        opacity: 1
+        @extend %transition
+        color: #18c976
+
+.socialicon
+    @extend %title-font-apply
+    text-decoration: none
+    margin-right: 1em
+    font-size: 1.2em
+
+.hello
+    @extend %paragraph-font-apply
+    margin: 2em 0
+
+#nav
+    background: $darker
+    flex: 1 1 100%
