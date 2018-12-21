@@ -2,10 +2,17 @@ $title: "Space Grotesk", "Anderson Grotesk", "Charlevoix Pro", "Pangram", "Helve
 $paragraph: "Anderson Grotesk", "Charlevoix Pro", "Helvetica", sans-serif
 $dark: #151515
 $darker: #101010
+$accent: #18c976
 
 %transition
-    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s
+    -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
+    -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
+    -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
     
+%sboxpad
+    padding: 1.5em
+
 %flex-center
     display: flex
     justify-content: center
@@ -19,11 +26,11 @@ $darker: #101010
     padding: 0
     margin: 0
 
-%title-font-apply
+%title-font
     font-family: $title
     @extend %lettering
 
-%paragraph-font-apply
+%para-font
     font-family: $paragraph
     @extend %lettering
     line-height: 1.5em
@@ -38,14 +45,13 @@ body
     display: flex
     flex-wrap: wrap
     align-items: flex-start
-    padding: 0.5em
+    padding: 0.25em
     display: -webkit-flex 
     -webkit-flex-wrap: wrap 
 
 .box
     background: $dark
-    margin: 0.5em
-    padding: 1.5em
+    margin: 0.25em
 
 .gutters
     margin: -1em 0 0 -1em
@@ -55,20 +61,36 @@ body
 
 .main
     flex: 0 1 30%
+    @extend %sboxpad
 
 .name
-    @extend %title-font-apply
+    @extend %title-font
     @extend %no-space
     text-transform: uppercase
 
 .tagline
-    @extend %title-font-apply
+    @extend %title-font
     @extend %no-space
     text-transform: uppercase
     margin-top: 10px
+    color: $accent
+    .tag
+        display: inline-block
+        @extend %no-space
+        margin-left: -6px
+        transform: skew(-20deg)
+        h4
+            @extend %no-space
+            padding: 7px 10px
+            transform: skew(20deg)
+        &:nth-child(1)
+            border-right: 2px solid #fff
+        &:nth-child(2)
+            border-right: 2px solid #fff
 
 .social
-    margin-top: 2em
+    margin-top: 1em
+    padding: 1em 0
     @extend %transition
     &:hover > .socialicon
         opacity: 0.5
@@ -76,18 +98,63 @@ body
     &:hover > .socialicon:hover
         opacity: 1
         @extend %transition
-        color: #18c976
+        color: $accent
 
 .socialicon
-    @extend %title-font-apply
+    @extend %title-font
     text-decoration: none
     margin-right: 1em
     font-size: 1.2em
+    @extend %transition
 
 .hello
-    @extend %paragraph-font-apply
+    @extend %para-font
     margin: 2em 0
 
 #nav
     background: $darker
     flex: 1 1 100%
+    @extend %sboxpad
+
+.rproject
+    flex: 1 1 20%
+    width: 60%
+    @extend %sboxpad
+
+.pbox
+    padding: 1.25em
+
+.project
+    flex: 1 1 20%
+    background-image: url('https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80')
+    background-position: center
+    background-size: 100%
+    background-repeat: no-repeat
+    height: 15em
+    .ptitle
+        @extend %title-font
+        text-transform: uppercase
+        @extend %no-space
+        margin-bottom: 1em
+        color: $accent
+    .pdes
+        @extend %para-font
+        @extend %no-space
+        padding: 10px 0
+    .ptitle, .pdes
+        @extend %transition
+        transform: translateY(-7em)
+        opacity: 0
+    .pbox
+        height: 0
+    &:hover > .pbox > .ptext > .ptitle, 
+    &:hover > .pbox > .ptext > .pdes
+        transform: translateY(0)
+        opacity: 1
+        @extend %transition
+    &:hover > .pbox
+        background: rgba(0,0,0,0.8)
+        height: 100%
+        padding: 0
+    &:hover > .pbox > .ptext
+        padding: 1.25em

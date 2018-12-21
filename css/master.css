@@ -1,23 +1,30 @@
-.social:hover > .socialicon:hover, .social:hover > .socialicon, .social {
-  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+.project:hover > .pbox > .ptext > .ptitle, .project:hover > .pbox > .ptext > .pdes, .project .ptitle, .project .pdes, .socialicon, .social:hover > .socialicon:hover, .social:hover > .socialicon, .social {
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
 
-.hello, .socialicon, .tagline, .name {
+.rproject, #nav, .main {
+  padding: 1.5em;
+}
+
+.project .pdes, .hello, .project .ptitle, .socialicon, .tagline, .name {
   color: #ffffff;
   font-weight: lighter;
 }
 
-.tagline, .name, html,
+.project .pdes, .project .ptitle, .tagline .tag h4, .tagline .tag, .tagline, .name, html,
 body {
   padding: 0;
   margin: 0;
 }
 
-.socialicon, .tagline, .name {
+.project .ptitle, .socialicon, .tagline, .name {
   font-family: "Space Grotesk", "Anderson Grotesk", "Charlevoix Pro", "Pangram", "Helvetica", sans-serif;
 }
 
-.hello {
+.project .pdes, .hello {
   font-family: "Anderson Grotesk", "Charlevoix Pro", "Helvetica", sans-serif;
   line-height: 1.5em;
 }
@@ -32,15 +39,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding: 0.5em;
+  padding: 0.25em;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
 }
 
 .box {
   background: #151515;
-  margin: 0.5em;
-  padding: 1.5em;
+  margin: 0.25em;
 }
 
 .gutters {
@@ -62,10 +68,27 @@ body {
 .tagline {
   text-transform: uppercase;
   margin-top: 10px;
+  color: #18c976;
+}
+.tagline .tag {
+  display: inline-block;
+  margin-left: -6px;
+  transform: skew(-20deg);
+}
+.tagline .tag h4 {
+  padding: 7px 10px;
+  transform: skew(20deg);
+}
+.tagline .tag:nth-child(1) {
+  border-right: 2px solid #fff;
+}
+.tagline .tag:nth-child(2) {
+  border-right: 2px solid #fff;
 }
 
 .social {
-  margin-top: 2em;
+  margin-top: 1em;
+  padding: 1em 0;
 }
 .social:hover > .socialicon {
   opacity: 0.5;
@@ -88,6 +111,51 @@ body {
 #nav {
   background: #101010;
   flex: 1 1 100%;
+}
+
+.rproject {
+  flex: 1 1 20%;
+  width: 60%;
+}
+
+.pbox {
+  padding: 1.25em;
+}
+
+.project {
+  flex: 1 1 20%;
+  background-image: url("https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15em;
+}
+.project .ptitle {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: #18c976;
+}
+.project .pdes {
+  padding: 10px 0;
+}
+.project .ptitle, .project .pdes {
+  transform: translateY(-7em);
+  opacity: 0;
+}
+.project .pbox {
+  height: 0;
+}
+.project:hover > .pbox > .ptext > .ptitle, .project:hover > .pbox > .ptext > .pdes {
+  transform: translateY(0);
+  opacity: 1;
+}
+.project:hover > .pbox {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  padding: 0;
+}
+.project:hover > .pbox > .ptext {
+  padding: 1.25em;
 }
 
 /*# sourceMappingURL=master.css.map */
