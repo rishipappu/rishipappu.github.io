@@ -1,30 +1,30 @@
-.project:hover > .pbox > .ptext > .ptitle, .project:hover > .pbox > .ptext > .pdes, .project .ptitle, .project .pdes, .socialicon, .social:hover > .socialicon:hover, .social:hover > .socialicon, .social {
+.contact .contactmessage a:hover, .contact .contactmessage a, #rproject:hover > .lgptitle, #rproject .lgptitle, .ppglink img, .ppglink:hover > img, .extlink .extarrow, .extlink:hover > .extarrow, .ptitle, .pdes, .picons, .pevent, .project:hover > .pbox > .ptext > .pcontent > .ptitle, .project:hover > .pbox > .ptext > .pcontent > .pevent, .project:hover > .pbox > .ptext > .pcontent > .pdes, .project:hover > .pbox > .ptext > .picons, .socialicon, .social:hover > .socialicon:hover, .social:hover > .socialicon, .social {
   -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
 
-.rproject, #nav, .main {
+.contact, #nav, .main {
   padding: 1.5em;
 }
 
-.project .pdes, .hello, .project .ptitle, .socialicon, .tagline, .name {
+#rproject .lgptitle, .contact .contactmessage, .pdes, .hello, .contact .lgcontact, .pevent, .ptitle, .socialicon, .tagline, .name {
   color: #ffffff;
   font-weight: lighter;
 }
 
-.project .pdes, .project .ptitle, .tagline .tag h4, .tagline .tag, .tagline, .name, html,
+#rproject .lgptitle, .psofticons, .pextlinks, .pdes, .ptitle, .tagline .tag h4, .tagline .tag, .tagline, .name, html,
 body {
   padding: 0;
   margin: 0;
 }
 
-.project .ptitle, .socialicon, .tagline, .name {
+.contact .lgcontact, .pevent, .ptitle, .socialicon, .tagline, .name {
   font-family: "Space Grotesk", "Anderson Grotesk", "Charlevoix Pro", "Pangram", "Helvetica", sans-serif;
 }
 
-.project .pdes, .hello {
+.contact .contactmessage, .pdes, .hello {
   font-family: "Anderson Grotesk", "Charlevoix Pro", "Helvetica", sans-serif;
   line-height: 1.5em;
 }
@@ -36,16 +36,19 @@ body {
 
 .site {
   background-color: #101010;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   padding: 0.25em;
-  display: -webkit-flex;
   -webkit-flex-wrap: wrap;
 }
 
 .box {
-  background: #151515;
+  background: #181818;
   margin: 0.25em;
 }
 
@@ -58,7 +61,12 @@ body {
 }
 
 .main {
+  -webkit-box-flex: 0 1 30%;
+  -moz-box-flex: 0 1 30%;
+  -webkit-flex: 0 1 30%;
+  -ms-flex: 0 1 30%;
   flex: 0 1 30%;
+  height: 18em;
 }
 
 .name {
@@ -110,42 +118,23 @@ body {
 
 #nav {
   background: #101010;
+  -webkit-box-flex: 1 1 100%;
+  -moz-box-flex: 1 1 100%;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
 }
 
-.rproject {
-  flex: 1 1 20%;
-  width: 60%;
-}
-
-.pbox {
-  padding: 1.25em;
-}
-
 .project {
-  flex: 1 1 20%;
-  background-image: url("https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 15em;
+  -webkit-box-flex: 0 1 30%;
+  -moz-box-flex: 0 1 30%;
+  -webkit-flex: 0 1 30%;
+  -ms-flex: 0 1 30%;
+  flex: 0 1 30%;
+  height: 20em;
+  overflow-y: hidden;
 }
-.project .ptitle {
-  text-transform: uppercase;
-  margin-bottom: 1em;
-  color: #18c976;
-}
-.project .pdes {
-  padding: 10px 0;
-}
-.project .ptitle, .project .pdes {
-  transform: translateY(-7em);
-  opacity: 0;
-}
-.project .pbox {
-  height: 0;
-}
-.project:hover > .pbox > .ptext > .ptitle, .project:hover > .pbox > .ptext > .pdes {
+.project:hover > .pbox > .ptext > .pcontent > .ptitle, .project:hover > .pbox > .ptext > .pcontent > .pevent, .project:hover > .pbox > .ptext > .pcontent > .pdes, .project:hover > .pbox > .ptext > .picons {
   transform: translateY(0);
   opacity: 1;
 }
@@ -156,6 +145,152 @@ body {
 }
 .project:hover > .pbox > .ptext {
   padding: 1.25em;
+}
+
+.ptitle {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: #18c976;
+}
+
+.pevent {
+  text-transform: uppercase;
+  color: #18c976;
+}
+
+.pdes {
+  padding: 10px 0;
+}
+
+.ptitle, .pdes, .picons, .pevent {
+  transform: translateY(-7em);
+  opacity: 0;
+}
+
+.pbox {
+  height: 0;
+  padding: 1.25em;
+}
+
+.pcontent {
+  flex: 1;
+}
+.pcontent .pextlinks {
+  margin-top: -1em;
+}
+
+.picons {
+  transform: translateY(1.5em);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.psofticons, .pextlinks {
+  flex: 0 1 50%;
+}
+
+.psofticons {
+  transform: translateY(0.1em);
+}
+
+.extlink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 5px;
+}
+.extlink:hover > .extarrow {
+  transform: translate(0.25em, -0.25em);
+}
+.extlink .extarrow {
+  width: 24px;
+}
+
+#healthmate {
+  background-image: url("../assets/HealthMate/HealthMateMockup.PNG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#gfr {
+  background-image: url("../assets/Gael Force Robotics/GFRMockup.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ppglink:hover > img {
+  margin-left: 0.75em;
+}
+.ppglink img {
+  width: 24px;
+  padding: 5px;
+}
+
+.project:hover > .pbox > .ptext > .pcontent > .ptitle > .ppglink > img {
+  transform: translateY(0.57em);
+}
+
+.softicon {
+  width: 24px;
+  float: right;
+  margin: 0 2px;
+}
+
+path {
+  fill: #fff;
+}
+
+#rproject {
+  -webkit-box-flex: 1 1 60%;
+  -moz-box-flex: 1 1 60%;
+  -webkit-flex: 1 1 60%;
+  -ms-flex: 1 1 60%;
+  flex: 1 1 60%;
+  width: 60%;
+  height: 21em;
+  background: #18c976;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#rproject .lgptitle {
+  font-family: "Supply";
+  text-transform: uppercase;
+  font-size: 4em;
+  margin-left: 5.5em;
+}
+#rproject:hover > .lgptitle {
+  margin: 0.5em;
+}
+
+.contact {
+  -webkit-box-flex: 1 1 20%;
+  -moz-box-flex: 1 1 20%;
+  -webkit-flex: 1 1 20%;
+  -ms-flex: 1 1 20%;
+  flex: 1 1 20%;
+}
+.contact .lgcontact {
+  text-transform: uppercase;
+}
+.contact .contactmessage a {
+  text-decoration: none;
+  padding: 2px;
+  color: #fff;
+  box-shadow: inset 0 -2px 0 #18c976;
+}
+.contact .contactmessage a:hover {
+  box-shadow: inset 0 -20px 0 #18c976;
 }
 
 /*# sourceMappingURL=master.css.map */
