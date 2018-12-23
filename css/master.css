@@ -1,11 +1,11 @@
-.contact .contactmessage a:hover, .contact .contactmessage a, #rproject:hover > .lgptitle, #rproject .lgptitle, .ppglink img, .ppglink:hover > img, .extlink .extarrow, .extlink:hover > .extarrow, .ptitle, .pdes, .picons, .pevent, .project:hover > .pbox > .ptext > .pcontent > .ptitle, .project:hover > .pbox > .ptext > .pcontent > .pevent, .project:hover > .pbox > .ptext > .pcontent > .pdes, .project:hover > .pbox > .ptext > .picons, .socialicon, .social:hover > .socialicon:hover, .social:hover > .socialicon, .social {
+.contact .contactmessage a:hover, .contact .contactmessage a:focus, .contact .contactmessage a, #rproject:hover > .lgptitle, #rproject .lgptitle, .ppglink img, .ppglink:hover > img, .extlink .extarrow, .extlink:hover > .extarrow, .ptitle, .pdes, .picons, .pevent, .project:hover > .pbox > .ptext > .pcontent > .ptitle, .project:hover > .pbox > .ptext > .pcontent > .pevent, .project:hover > .pbox > .ptext > .pcontent > .pdes, .project:hover > .pbox > .ptext > .picons, .socialicon, .social:hover > .socialicon:hover, .social:hover > .socialicon, .social {
   -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
 
-.contact, #nav, .main {
+.contact, .main {
   padding: 1.5em;
 }
 
@@ -114,15 +114,6 @@ body {
 
 .hello {
   margin: 2em 0;
-}
-
-#nav {
-  background: #101010;
-  -webkit-box-flex: 1 1 100%;
-  -moz-box-flex: 1 1 100%;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
 }
 
 .project {
@@ -289,8 +280,43 @@ path {
   color: #fff;
   box-shadow: inset 0 -2px 0 #18c976;
 }
-.contact .contactmessage a:hover {
+.contact .contactmessage a:hover, .contact .contactmessage a:focus {
   box-shadow: inset 0 -20px 0 #18c976;
+  outline: none;
+}
+
+#nav {
+  background: #101010;
+  width: 100%;
+  -webkit-box-flex: 1 1 100%;
+  -moz-box-flex: 1 1 100%;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav .navbox {
+  -webkit-box-flex: 0 1 20%;
+  -moz-box-flex: 0 1 20%;
+  -webkit-flex: 0 1 20%;
+  -ms-flex: 0 1 20%;
+  flex: 0 1 20%;
+  border: 1px solid red;
+}
+
+.navlink {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=master.css.map */
