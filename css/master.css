@@ -1,3 +1,10 @@
+.link:hover, .link {
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
 html,
 body {
   padding: 0;
@@ -10,7 +17,60 @@ body {
 }
 
 .site {
-  background-color: #101010;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.brb {
+  padding: 4em;
+}
+
+.greeting {
+  color: #18c976;
+  font-family: "Supply";
+  font-weight: 100;
+  font-size: 3em;
+  word-spacing: -10px;
+  transform: translateX(1em);
+  margin: 0;
+}
+.greeting:before {
+  content: " ";
+  width: 1.5em;
+  border: 2px solid #18c976;
+  height: 0em;
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translateX(-2em);
+}
+
+.explanation {
+  color: #666666;
+  font-size: 1.2em;
+  font-family: "Manrope";
+  font-weight: 400;
+  margin: 1em 2.5em;
+  width: 50vw;
+  line-height: 2em;
+}
+
+.link {
+  text-decoration: none;
+  color: #666666;
+  box-shadow: inset 0 -2px 0 #18c976;
+  padding: 0 2px;
+}
+.link:hover {
+  box-shadow: inset 0 -30px 0 #18c976;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=master.css.map */
