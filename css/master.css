@@ -68,8 +68,8 @@ body {
 
 .explanation {
   color: #666666;
-  font-size: 1.2em;
-  font-family: "Manrope";
+  font-size: 1.3em;
+  font-family: "Myste";
   font-weight: 400;
   margin: 1em 2.5em;
   width: 50vw;
@@ -95,6 +95,7 @@ body {
 }
 
 .social {
+  margin-top: 2em;
   margin-left: 2em;
   font-size: 1.5em;
 }

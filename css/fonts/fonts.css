@@ -756,3 +756,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Myste';
+    src:url('../fonts/Myste/Myste-Regular.eot');
+    src:url('../fonts/Myste/Myste-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Myste/Myste-Regular.woff2') format('woff2'),
+        url('../fonts/Myste/Myste-Regular.woff') format('woff'),
+        url('../fonts/Myste/Myste-Regular.ttf') format('truetype'),
+        url('../fonts/Myste/Myste-Regular.svg#Myste-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
