@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Virtuous Slab';
+    src: url('VirtuousSlabBold.eot');
+    src: url('VirtuousSlabBold.eot?#iefix') format('embedded-opentype'),
+        url('VirtuousSlabBold.woff2') format('woff2'),
+        url('VirtuousSlabBold.woff') format('woff'),
+        url('VirtuousSlabBold.ttf') format('truetype'),
+        url('VirtuousSlabBold.svg#VirtuousSlabBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Virtuous Slab';
+    src: url('VirtuousSlabThin.eot');
+    src: url('VirtuousSlabThin.eot?#iefix') format('embedded-opentype'),
+        url('VirtuousSlabThin.woff2') format('woff2'),
+        url('VirtuousSlabThin.woff') format('woff'),
+        url('VirtuousSlabThin.ttf') format('truetype'),
+        url('VirtuousSlabThin.svg#VirtuousSlabThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Virtuous Slab';
+    src: url('VirtuousSlabHairline.eot');
+    src: url('VirtuousSlabHairline.eot?#iefix') format('embedded-opentype'),
+        url('VirtuousSlabHairline.woff2') format('woff2'),
+        url('VirtuousSlabHairline.woff') format('woff'),
+        url('VirtuousSlabHairline.ttf') format('truetype'),
+        url('VirtuousSlabHairline.svg#VirtuousSlabHairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Virtuous Slab';
+    src: url('VirtuousSlabRegular.eot');
+    src: url('VirtuousSlabRegular.eot?#iefix') format('embedded-opentype'),
+        url('VirtuousSlabRegular.woff2') format('woff2'),
+        url('VirtuousSlabRegular.woff') format('woff'),
+        url('VirtuousSlabRegular.ttf') format('truetype'),
+        url('VirtuousSlabRegular.svg#VirtuousSlabRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Virtuous Slab';
+    src: url('VirtuousSlabItalic.eot');
+    src: url('VirtuousSlabItalic.eot?#iefix') format('embedded-opentype'),
+        url('VirtuousSlabItalic.woff2') format('woff2'),
+        url('VirtuousSlabItalic.woff') format('woff'),
+        url('VirtuousSlabItalic.ttf') format('truetype'),
+        url('VirtuousSlabItalic.svg#VirtuousSlabItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+

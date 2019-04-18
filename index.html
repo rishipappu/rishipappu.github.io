@@ -1,16 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="sass/master.css">
-</head>
-
-<body>
-    <h1 class="name">Rishi Pappu</h1>
-</body>
-
-</html>
+---
+---
+{% include header.html %}
+{% include nav.html content='work' %}
+<div class="wrapper">
+    <main>
+        <div class="details">
+            <p class="intro">
+                Hi! I'm Rishi, a self-taught <span class="do">full-stack
+                    developer.</span>
+            </p>
+            <p class="position">Vice President at
+                <a target="_blank" href="https://trivalleyyouthexpo.com">
+                    Tri-Valley Youth Expo
+                </a>
+            </p>
+            <p class="position">Student at Dublin High School</p>
+        </div>
+        <div id="work">
+            <div class="pwrapper">
+                <ul class="column">
+                    <li class="project">
+                        <a class="projectlink" href="/work/trivalleyyouthexpo">
+                            <div id="tvye" class="projectthumbnail">
+                                <div class="projectinfo">
+                                    <p class="projecttitle">Tri-Valley Youth
+                                        Expo</p>
+                                    <p class="projectdetails">
+                                        UX/UI
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a class="projectlink" href="/work/dotmentia">
+                            <div id="dotmentia" class="projectthumbnail">
+                                <div class="projectinfo">
+                                    <p class="projecttitle">Dotmentia</p>
+                                    <p class="projectdetails">
+                                        Computer
+                                        Vision/Virtual Assistant
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a class="projectlink" href="/work/slashsrc">
+                            <div id="SRC" class="projectthumbnail">
+                                <div class="projectinfo">
+                                    <p class="projecttitle">/SRC</p>
+                                    <p class="projectdetails">
+                                        React/Search
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="column">
+                    <li class="project">
+                        <a class="projectlink" href="/work/slashsrc">
+                            <div id="SRC" class="projectthumbnail">
+                                <div class="projectinfo">
+                                    <p class="projecttitle">/SRC</p>
+                                    <p class="projectdetails">
+                                        Search/Web Scraping
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a class="projectlink" href="/work/dotmentia">
+                            <div id="dotmentia" class="projectthumbnail">
+                                <div class="projectinfo">
+                                    <p class="projecttitle">Dotmentia</p>
+                                    <p class="projectdetails">
+                                        Computer
+                                        Vision/Virtual Assistant
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+{% include footer.html %}

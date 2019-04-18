@@ -1,0 +1,194 @@
+---
+---
+    
+@import palette
+@import mixins
+@import extendables
+@import typography
+
+html,
+body
+    @extend %ns
+    overflow-x: hidden
+    font-family: $type
+
+// NAV
+
+nav
+    +flexbox()
+    +flex(1 1 100%)
+    width: 100%
+    // padding: 1em
+    position: fixed
+    z-index: 10
+    +bgbasics('', #ffffff)
+
+.left
+    +flexbox()
+    +flex(1 1 67.5%)
+    // @extend %sb
+    a
+        text-decoration: none
+        padding: 1em
+        img
+            width: 32px
+            padding: 0 5em
+    +respond-to(handhelds)
+        +flex(1 0 100%)
+        display: block
+
+.right
+    +flexbox()
+    +flex(1 1 32.5%)
+    // @extend %sb
+    +respond-to(handhelds)
+        +flex(1 0 100%)
+    ul
+        +flexbox()
+        align-items: center
+        .navlink
+            display: inline
+            margin: 0 1em
+
+#active > a
+    opacity: 1
+
+.navlink
+    a
+        color: $ib
+        text-decoration: none
+        font-family: $type
+        padding: 1em
+        opacity: 0.8
+
+        // Definitely change this hover effect
+        // Seems kinda immature and obnoxious
+        box-shadow: inset 0 0px 0 $lprime
+        @extend %qt
+        &:hover
+            color: #ffffff
+            @extend %qt
+            box-shadow: inset 0 -3.2em 0 $lprime
+
+
+.wrapper
+    padding: 1em
+
+// INTRO
+
+.details
+    // @extend %sb
+
+.intro
+    font-family: $type
+    font-size: 1.4em
+    color: $darker
+    @extend %ns
+    margin: 0.5em 0
+
+.position
+    color: $lighter
+    font-family: $type
+    font-size: 1.1em
+    @extend %ns
+    margin: 0.2em 0
+
+.do
+    color: $primary
+
+// 404
+
+.errorwrapper
+    height: 100vh
+    width: 100vw
+    +flexbox()
+    align-items: center
+    justify-content: center
+
+.error
+    text-align: center
+    font-family: $type
+    h3, p
+        @extend %ns
+        font-size: 1.5em
+        margin: 1em
+
+.four-o-four
+    font-size: 15em
+    @extend %ns
+    color: $lprime
+
+// PROJECTS
+
+main
+    // @extend %sb
+    margin-top: 7em
+    padding: 5em 6em
+
+#work
+    // @extend %sb
+    margin-top: 4em
+
+.pwrapper
+    +flexbox()
+    padding: 0em 7.5em
+
+a
+    color: $lprime
+    text-decoration: none
+
+
+.column
+    list-style-type: none
+    @extend %ns
+    // @extend %sb
+    margin: 0.75em
+    +flex(1 1 auto)
+
+.project, .projectlink
+    @extend %ns
+
+.project
+    // @extend %sb
+    margin: 1.5em 0
+
+.projectthumbnail
+    position: relative
+    top: 0
+    left: 0
+    width: 100%
+    background-size: 100%
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    @extend %qt
+
+.projectinfo
+    padding: 1em 1.5em
+    +bgbasics('', $transparent)
+    p
+        @extend %ns
+        line-height: 1.5em
+
+.projecttitle
+    color: $darker
+
+.projectdetails
+    color: $lighter
+
+.projectthumbnail:hover
+    background-size: 105%
+    @extend %qt
+
+#dotmentia
+    +bgbasics('../images/practiceproject1.jfif')
+    padding-top: 180px
+    @extend %ph
+
+#SRC
+    +bgbasics('../images/practiceproject.jfif')
+    @extend %ph
+    padding-top: 500px
+
+#tvye
+    +bgbasics('../images/projects/tvye.png')
+    @extend %ph
+    padding-top: 300px

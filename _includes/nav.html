@@ -1,0 +1,22 @@
+<nav>
+    <div class="left">
+        <a href="/"><img src="assets/images/logo.svg" alt="" srcset=""></a>
+    </div>
+    <div class="right">
+        <ul>
+            {% if include.content == 'work' %}
+            <li class="navlink" id="active"><a href="/work">Work</a></li>
+            <li class="navlink"><a href="/about">About</a></li>
+            <li class="navlink"><a href="">Resume</a></li>
+            {% elsif include.content == 'about' %}
+            <li class="navlink"><a href="/work">Work</a></li>
+            <li class="navlink" id="active"><a href="/about">About</a></li>
+            <li class="navlink"><a href="">Resume</a></li>
+            {% else %}
+            <li class="navlink"><a href="/work">Work</a></li>
+            <li class="navlink"><a href="/about">About</a></li>
+            <li class="navlink" id="active"><a href="">Resume</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

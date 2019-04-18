@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Sanchez';
+    src:url('./Regular/Sanchez-Regular.eot');
+    src:url('./Regular/Sanchez-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./Regular/Sanchez-Regular.woff2') format('woff2'),
+        url('./Regular/Sanchez-Regular.woff') format('woff'),
+        url('./Regular/Sanchez-Regular.ttf') format('truetype'),
+        url('./Regular/Sanchez-Regular.svg#Sanchez-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sanchez';
+    src:url('./Italic/Sanchez-RegularItalic.eot');
+    src:url('./Italic/Sanchez-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('./Italic/Sanchez-RegularItalic.woff2') format('woff2'),
+        url('./Italic/Sanchez-RegularItalic.woff') format('woff'),
+        url('./Italic/Sanchez-RegularItalic.ttf') format('truetype'),
+        url('./Italic/Sanchez-RegularItalic.svg#Sanchez-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
