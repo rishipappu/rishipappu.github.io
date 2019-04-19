@@ -5,17 +5,23 @@
     <div class="right">
         <ul>
             {% if include.content == 'work' %}
-            <li class="navlink" id="active"><a href="/work">Work</a></li>
+            <li class="navlink" id="active"><a href="/#work">Work</a></li>
             <li class="navlink"><a href="/about">About</a></li>
-            <li class="navlink"><a href="">Resume</a></li>
+            <li class="navlink"><a target="_blank"
+                    href="assets/Rishi Pappu Official Resume.pdf">Resume</a>
+            </li>
             {% elsif include.content == 'about' %}
-            <li class="navlink"><a href="/work">Work</a></li>
+            <li class="navlink"><a href="/#work">Work</a></li>
             <li class="navlink" id="active"><a href="/about">About</a></li>
-            <li class="navlink"><a href="">Resume</a></li>
+            <li class="navlink"><a target="_blank"
+                    href="assets/Rishi Pappu Official Resume.pdf">Resume</a>
+            </li>
             {% else %}
-            <li class="navlink"><a href="/work">Work</a></li>
+            <li class="navlink"><a href="/#work">Work</a></li>
             <li class="navlink"><a href="/about">About</a></li>
-            <li class="navlink" id="active"><a href="">Resume</a></li>
+            <li class="navlink" id="active"><a target="_blank"
+                    href="assets/Rishi Pappu Official Resume.pdf">Resume</a>
+            </li>
             {% endif %}
         </ul>
     </div>

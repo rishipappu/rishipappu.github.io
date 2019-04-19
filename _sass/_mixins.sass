@@ -76,3 +76,10 @@ $break-large: 1000px
 =border($style, $radius)
     border: $style
     border-radius: $radius
+
+=ph($size: 100%)
+    background-size: $size
+    +vendor-transition(all, cubic-bezier(0.075, 0.82, 0.165, 1), 0.4s)
+    &:hover
+        +vendor-transition(all, cubic-bezier(0.075, 0.82, 0.165, 1), 0.4s)
+        background-size: $size + 5%

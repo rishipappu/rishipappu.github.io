@@ -6,11 +6,24 @@
 @import extendables
 @import typography
 
+::-webkit-scrollbar 
+    width: 12px
+
+
+::-webkit-scrollbar-track
+    background: #eeeeee 
+
+ 
+::-webkit-scrollbar-thumb 
+    background: #cccccc
+
+
 html,
 body
     @extend %ns
     overflow-x: hidden
     font-family: $type
+    scroll-behavior: smooth
 
 // NAV
 
@@ -18,7 +31,7 @@ nav
     +flexbox()
     +flex(1 1 100%)
     width: 100%
-    // padding: 1em
+    padding: 0.5em
     position: fixed
     z-index: 10
     +bgbasics('', #ffffff)
@@ -55,20 +68,21 @@ nav
 
 .navlink
     a
-        color: $ib
+        color: $darker
         text-decoration: none
         font-family: $type
         padding: 1em
-        opacity: 0.8
+        opacity: 0.7
 
         // Definitely change this hover effect
         // Seems kinda immature and obnoxious
-        box-shadow: inset 0 0px 0 $lprime
+        // box-shadow: inset 0 0px 0 $lprime
         @extend %qt
         &:hover
-            color: #ffffff
+            // color: #ffffff
+            opacity: 1
             @extend %qt
-            box-shadow: inset 0 -3.2em 0 $lprime
+            // box-shadow: inset 0 -3.2em 0 $lprime
 
 
 .wrapper
@@ -128,6 +142,7 @@ main
 #work
     // @extend %sb
     margin-top: 4em
+    padding-top: 2em
 
 .pwrapper
     +flexbox()
@@ -143,7 +158,7 @@ a
     @extend %ns
     // @extend %sb
     margin: 0.75em
-    +flex(1 1 auto)
+    +flex(1 0 50%)
 
 .project, .projectlink
     @extend %ns
@@ -151,6 +166,7 @@ a
 .project
     // @extend %sb
     margin: 1.5em 0
+    border-radius: 5px
 
 .projectthumbnail
     position: relative
@@ -160,10 +176,13 @@ a
     background-size: 100%
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
     @extend %qt
+    border-radius: 5px
 
 .projectinfo
     padding: 1em 1.5em
-    +bgbasics('', $transparent)
+    +bgbasics('', #ffffff)
+    border-bottom-right-radius: 5px
+    border-bottom-left-radius: 5px
     p
         @extend %ns
         line-height: 1.5em
@@ -179,16 +198,67 @@ a
     @extend %qt
 
 #dotmentia
-    +bgbasics('../images/practiceproject1.jfif')
-    padding-top: 180px
-    @extend %ph
+    +bgbasics('../images/projects/ghome.png')
+    padding-top: 260px
+    +ph()
 
 #SRC
-    +bgbasics('../images/practiceproject.jfif')
-    @extend %ph
-    padding-top: 500px
+    +bgbasics('../images/projects/pha.png', $t, 120%)
+    +ph(120%)
+    padding-top: 290px
 
 #tvye
     +bgbasics('../images/projects/tvye.png')
-    @extend %ph
-    padding-top: 300px
+    +ph()
+    padding-top: 360px
+
+#gfr
+    +bgbasics('../images/projects/gfr.png')
+    +ph()
+    padding-top: 350px
+
+#healthmate
+    +bgbasics('../images/projects/healthmatephone.png')
+    +ph(120%)
+    padding-top: 260px
+
+
+// ABOUT
+
+.about
+    padding: 1em
+    padding-right: 15em
+
+.green
+    color: $lprime
+
+.aboutpreview
+    // @extend %sb
+    +flexbox()
+    .aboutleft
+        // @extend %sb
+        +flex(1 1 70%)
+    .aboutright
+        // @extend %sb
+        +flex(1 1 30%)
+        .aboutimg
+            border-radius: 5px
+            +bgbasics('../images/Profile_2.JPG')
+            padding: 6em
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+            margin-left: 10em
+
+.previewtxt
+    align-items: center
+    color: $darker
+    font-weight: 400
+    &:nth-child(1)
+        font-weight: 600
+
+.aboutbox
+    margin-top: 5em
+
+.abouttxt
+    font-size: 1.2em
+    color: $ib
+    line-height: 2em
